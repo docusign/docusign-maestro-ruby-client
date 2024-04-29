@@ -37,6 +37,7 @@ module DocuSign_Maestro
 
     attr_accessor :template_id
 
+    # Contains the list of Users and Steps mapping
     attr_accessor :users
 
     # Attribute mapping from ruby-style variable name to JSON key.

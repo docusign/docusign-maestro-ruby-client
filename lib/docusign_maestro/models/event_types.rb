@@ -14,6 +14,19 @@ require 'date'
 module DocuSign_Maestro
   class EventTypes
     
+    ENVELOPE_SENT = 'envelope-sent'.freeze
+    ENVELOPE_DELIVERED = 'envelope-delivered'.freeze
+    ENVELOPE_COMPLETED = 'envelope-completed'.freeze
+    ENVELOPE_DECLINED = 'envelope-declined'.freeze
+    ENVELOPE_VOIDED = 'envelope-voided'.freeze
+    ENVELOPE_CREATED = 'envelope-created'.freeze
+    ENVELOPE_RESENT = 'envelope-resent'.freeze
+    ENVELOPE_CORRECTED = 'envelope-corrected'.freeze
+    ENVELOPE_PURGE = 'envelope-purge'.freeze
+    ENVELOPE_DELETED = 'envelope-deleted'.freeze
+    ENVELOPE_DISCARD = 'envelope-discard'.freeze
+    DELIVERY_FAILED = 'Delivery Failed'.freeze
+    AUTHENTICATION_FAILED = 'Authentication Failed'.freeze
     SENT = 'Sent'.freeze
     DELIVERED = 'Delivered'.freeze
     SIGNED = 'Signed'.freeze
