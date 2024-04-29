@@ -14,9 +14,11 @@ require 'date'
 module DocuSign_Maestro
   class WorkflowInstanceState
     
+    CREATED = 'Created'.freeze
     IN_PROGRESS = 'In Progress'.freeze
     COMPLETED = 'Completed'.freeze
     FAILED = 'Failed'.freeze
+    CANCELED = 'Canceled'.freeze
 
     # Builds the enum from string
     # @param [String] The enum value in the form of the string

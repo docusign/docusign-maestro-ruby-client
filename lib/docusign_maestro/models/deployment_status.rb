@@ -20,6 +20,8 @@ module DocuSign_Maestro
     DELETE_IN_PROGRESS = 'Delete in Progress'.freeze
     DELETED = 'Deleted'.freeze
     NOT_DEPLOYED = 'Not Deployed'.freeze
+    UNPUBLISH_IN_PROGRESS = 'Unpublish in Progress'.freeze
+    UNPUBLISHED = 'Unpublished'.freeze
 
     # Builds the enum from string
     # @param [String] The enum value in the form of the string

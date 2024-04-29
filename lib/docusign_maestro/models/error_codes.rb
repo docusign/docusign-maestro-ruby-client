@@ -28,6 +28,7 @@ module DocuSign_Maestro
     N10202 = 'ERR_10202'.freeze
     N10301 = 'ERR_10301'.freeze
     N10302 = 'ERR_10302'.freeze
+    N10401 = 'ERR_10401'.freeze
     N10801 = 'ERR_10801'.freeze
     N10802 = 'ERR_10802'.freeze
     N10999 = 'ERR_10999'.freeze

@@ -92,7 +92,7 @@ module DocuSign_Maestro
     # Check to see if the all the properties in the model are valid
     # @return true if the model is valid
     def valid?
-      started_by_type_validator = EnumAttributeValidator.new('String', ['Anonymous', 'Preparer', 'Participant'])
+      started_by_type_validator = EnumAttributeValidator.new('String', ['Anonymous', 'Preparer', 'Participant', 'OnBehalfOf'])
       return false unless started_by_type_validator.valid?(@started_by_type)
       true
     end
@@ -100,7 +100,7 @@ module DocuSign_Maestro
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] started_by_type Object to be assigned
     def started_by_type=(started_by_type)
-      validator = EnumAttributeValidator.new('String', ['Anonymous', 'Preparer', 'Participant'])
+      validator = EnumAttributeValidator.new('String', ['Anonymous', 'Preparer', 'Participant', 'OnBehalfOf'])
       unless validator.valid?(started_by_type)
         fail ArgumentError, 'invalid value for "started_by_type", must be one of #{validator.allowable_values}.'
       end
