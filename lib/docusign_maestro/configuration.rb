@@ -124,8 +124,8 @@ module DocuSign_Maestro
 
     def initialize
       @scheme = 'https'
-      @host = 'www.docusign.net'
-      @base_path = '/'
+      @host = 'apps.docusign.com'
+      @base_path = '/api/maestro'
       @api_key = {}
       @api_key_prefix = {}
       @timeout = 0

@@ -45,7 +45,7 @@ module DocuSign_Maestro
       # verify the required parameter 'instance_id' is set
       fail ArgumentError, "Missing the required parameter 'instance_id' when calling WorkflowInstanceManagementApi.cancel_workflow_instance" if instance_id.nil?
       # resource path
-      local_var_path = "aow-manage/v1.0/management/accounts/{accountId}/instances/{instanceId}/cancel".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'instanceId' + '}', instance_id.to_s)
+      local_var_path = "/v1/accounts/{accountId}/management/instances/{instanceId}/cancel".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'instanceId' + '}', instance_id.to_s)
 
       # query parameters
       query_params = {}
@@ -100,7 +100,7 @@ module DocuSign_Maestro
       # verify the required parameter 'instance_id' is set
       fail ArgumentError, "Missing the required parameter 'instance_id' when calling WorkflowInstanceManagementApi.get_workflow_history" if instance_id.nil?
       # resource path
-      local_var_path = "aow-manage/v1.0/management/accounts/{accountId}/instances/{instanceId}/history".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'instanceId' + '}', instance_id.to_s)
+      local_var_path = "/v1/accounts/{accountId}/management/instances/{instanceId}/history".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'instanceId' + '}', instance_id.to_s)
 
       # query parameters
       query_params = {}
@@ -159,7 +159,7 @@ module DocuSign_Maestro
       # verify the required parameter 'instance_id' is set
       fail ArgumentError, "Missing the required parameter 'instance_id' when calling WorkflowInstanceManagementApi.get_workflow_instance" if instance_id.nil?
       # resource path
-      local_var_path = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/instances/{instanceId}".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'workflowDefinitionId' + '}', workflow_definition_id.to_s).sub('{' + 'instanceId' + '}', instance_id.to_s)
+      local_var_path = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/instances/{instanceId}".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'workflowDefinitionId' + '}', workflow_definition_id.to_s).sub('{' + 'instanceId' + '}', instance_id.to_s)
 
       # query parameters
       query_params = {}
@@ -214,7 +214,7 @@ module DocuSign_Maestro
       # verify the required parameter 'workflow_definition_id' is set
       fail ArgumentError, "Missing the required parameter 'workflow_definition_id' when calling WorkflowInstanceManagementApi.get_workflow_instances" if workflow_definition_id.nil?
       # resource path
-      local_var_path = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/instances".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'workflowDefinitionId' + '}', workflow_definition_id.to_s)
+      local_var_path = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/instances".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'workflowDefinitionId' + '}', workflow_definition_id.to_s)
 
       # query parameters
       query_params = {}
