@@ -63,7 +63,7 @@ module DocuSign_Maestro
       # verify the required parameter 'body' is set
       fail ArgumentError, "Missing the required parameter 'body' when calling WorkflowManagementApi.create_workflow_definition" if body.nil?
       # resource path
-      local_var_path = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s)
+      local_var_path = "/v1/accounts/{accountId}/management/workflow_definitions".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s)
 
       # query parameters
       query_params = {}
@@ -118,7 +118,7 @@ module DocuSign_Maestro
       # verify the required parameter 'workflow_definition_id' is set
       fail ArgumentError, "Missing the required parameter 'workflow_definition_id' when calling WorkflowManagementApi.delete_workflow_definition" if workflow_definition_id.nil?
       # resource path
-      local_var_path = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'workflowDefinitionId' + '}', workflow_definition_id.to_s)
+      local_var_path = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'workflowDefinitionId' + '}', workflow_definition_id.to_s)
 
       # query parameters
       query_params = {}
@@ -175,7 +175,7 @@ module DocuSign_Maestro
       # verify the required parameter 'workflow_definition_id' is set
       fail ArgumentError, "Missing the required parameter 'workflow_definition_id' when calling WorkflowManagementApi.get_workflow_definition" if workflow_definition_id.nil?
       # resource path
-      local_var_path = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'workflowDefinitionId' + '}', workflow_definition_id.to_s)
+      local_var_path = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'workflowDefinitionId' + '}', workflow_definition_id.to_s)
 
       # query parameters
       query_params = {}
@@ -231,7 +231,7 @@ module DocuSign_Maestro
       # verify the required parameter 'workflow_definition_id' is set
       fail ArgumentError, "Missing the required parameter 'workflow_definition_id' when calling WorkflowManagementApi.get_workflow_definition_config_instances" if workflow_definition_id.nil?
       # resource path
-      local_var_path = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/configInstances".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'workflowDefinitionId' + '}', workflow_definition_id.to_s)
+      local_var_path = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/config_instances".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'workflowDefinitionId' + '}', workflow_definition_id.to_s)
 
       # query parameters
       query_params = {}
@@ -287,7 +287,7 @@ module DocuSign_Maestro
         fail ArgumentError, 'invalid value for "status", must be one of active, inactive, publishing, unpublishing, archived, archiving'
       end
       # resource path
-      local_var_path = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s)
+      local_var_path = "/v1/accounts/{accountId}/management/workflow_definitions".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s)
 
       # query parameters
       query_params = {}
@@ -347,7 +347,7 @@ module DocuSign_Maestro
       # verify the required parameter 'body' is set
       fail ArgumentError, "Missing the required parameter 'body' when calling WorkflowManagementApi.publish_or_un_publish_workflow_definition" if body.nil?
       # resource path
-      local_var_path = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}/publish".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'workflowDefinitionId' + '}', workflow_definition_id.to_s)
+      local_var_path = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}/publish".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'workflowDefinitionId' + '}', workflow_definition_id.to_s)
 
       # query parameters
       query_params = {}
@@ -406,7 +406,7 @@ module DocuSign_Maestro
       # verify the required parameter 'body' is set
       fail ArgumentError, "Missing the required parameter 'body' when calling WorkflowManagementApi.update_workflow_definition" if body.nil?
       # resource path
-      local_var_path = "aow-manage/v1.0/management/accounts/{accountId}/workflowDefinitions/{workflowDefinitionId}".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'workflowDefinitionId' + '}', workflow_definition_id.to_s)
+      local_var_path = "/v1/accounts/{accountId}/management/workflow_definitions/{workflowDefinitionId}".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'workflowDefinitionId' + '}', workflow_definition_id.to_s)
 
       # query parameters
       query_params = {}

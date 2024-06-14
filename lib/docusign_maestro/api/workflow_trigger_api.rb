@@ -36,30 +36,34 @@ module DocuSign_Maestro
     # Creates a new workflow instance after authenticating with DS Account Server
     # Creates a new workflow instance after authenticating with DS Account Server
     # @param account_id Account ID
+    # @param workflow_definition_id Workflow Definition ID
     # @param body JSON payload that will be passed to the triggered workflow 
     # @param DocuSign_Maestro::TriggerWorkflowOptions Options for modifying the behavior of the function.
     # @return [TriggerWorkflowViaPostResponse]
-    def trigger_workflow(account_id, body, options = DocuSign_Maestro::TriggerWorkflowOptions.default)
-      data, _status_code, _headers = trigger_workflow_with_http_info(account_id,  body, options)
+    def trigger_workflow(account_id, workflow_definition_id, body, options = DocuSign_Maestro::TriggerWorkflowOptions.default)
+      data, _status_code, _headers = trigger_workflow_with_http_info(account_id, workflow_definition_id,  body, options)
       return data
     end
 
     # Creates a new workflow instance after authenticating with DS Account Server
     # Creates a new workflow instance after authenticating with DS Account Server
     # @param account_id Account ID
+    # @param workflow_definition_id Workflow Definition ID
     # @param body JSON payload that will be passed to the triggered workflow 
     # @param DocuSign_Maestro::TriggerWorkflowOptions Options for modifying the behavior of the function.
     # @return [Array<(TriggerWorkflowViaPostResponse, Fixnum, Hash)>] TriggerWorkflowViaPostResponse data, response status code and response headers
-    def trigger_workflow_with_http_info(account_id, body, options = DocuSign_Maestro::TriggerWorkflowOptions.default)
+    def trigger_workflow_with_http_info(account_id, workflow_definition_id, body, options = DocuSign_Maestro::TriggerWorkflowOptions.default)
       if @api_client.config.debugging
         @api_client.config.logger.debug "Calling API: WorkflowTriggerApi.trigger_workflow ..."
       end
       # verify the required parameter 'account_id' is set
       fail ArgumentError, "Missing the required parameter 'account_id' when calling WorkflowTriggerApi.trigger_workflow" if account_id.nil?
+      # verify the required parameter 'workflow_definition_id' is set
+      fail ArgumentError, "Missing the required parameter 'workflow_definition_id' when calling WorkflowTriggerApi.trigger_workflow" if workflow_definition_id.nil?
       # verify the required parameter 'body' is set
       fail ArgumentError, "Missing the required parameter 'body' when calling WorkflowTriggerApi.trigger_workflow" if body.nil?
       # resource path
-      local_var_path = "aow-auth/v1.0/accounts/{accountId}/workflows/trigger".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s)
+      local_var_path = "/v1/accounts/{accountId}/workflow_definitions/{workflowDefinitionId}/trigger".sub('{format}','json').sub('{' + 'accountId' + '}', account_id.to_s).sub('{' + 'workflowDefinitionId' + '}', workflow_definition_id.to_s)
 
       # query parameters
       query_params = {}
