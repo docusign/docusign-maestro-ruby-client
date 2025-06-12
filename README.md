@@ -1,23 +1,37 @@
-# The Official Docusign Maestro Ruby Client SDK
+
+## ⚠️ Deprecation Notice
+This SDK is deprecated and no longer actively maintained.
+
+Docusign has launched a new IAM SDK, which includes support for Maestro, Navigator and Connected Fields API families in a single, unified package.
+
+👉 We recommend migrating to the IAM SDK for the latest updates, support, and a streamlined developer experience.
+
+🔗 [Learn more and get started](https://developers.docusign.com/docs/sdks/) 
+
+# The Official Docusign Maestro Ruby Client SDK (Deprecated)
+
+![Deprecated](https://img.shields.io/badge/status-deprecated-red.svg)
 
 The Docusign SDK makes integrating Docusign into your apps and websites a seamless experience.
 
 ## Table of Contents
-- [Introduction](#introduction)
-- [Installation](#installation)
-	* [Version Information](#versionInformation)
-	* [Requirements](#requirements)
-	* [Compatibility](#compatibility)
-	* [Installation via your application's Gemfile](#installationViaGem)
-	* [Manual Installation](#manualInstallation)
-- [Dependencies](#dependencies)
-- [API Reference](#apiReference)
-- [Code Examples](#codeExamples)
-- [OAuth Implementations](#oauthImplementations)
-- [Changelog](#changeLog)
-- [Support](#support)
-- [License](#license)
-- [Additional Resources](#additionalResources)
+- [The Official Docusign Maestro Ruby Client SDK (Deprecated)](#the-official-docusign-maestro-ruby-client-sdk-deprecated)
+	- [Table of Contents](#table-of-contents)
+	- [Introduction](#introduction)
+	- [Installation](#installation)
+		- [Version Information](#version-information)
+	- [Requirements](#requirements)
+	- [Compatibility](#compatibility)
+		- [Installation via your application's Gemfile:](#installation-via-your-applications-gemfile)
+		- [Manual Installation:](#manual-installation)
+		- [SDK Dependencies](#sdk-dependencies)
+	- [API Reference](#api-reference)
+	- [Code examples](#code-examples)
+	- [OAuth implementations](#oauth-implementations)
+	- [Changelog](#changelog)
+	- [Support](#support)
+	- [License](#license)
+		- [Additional resources](#additional-resources)
 
 <a id="introduction"></a>
 ## Introduction
@@ -30,7 +44,7 @@ This client SDK is provided as open source, which enables you to customize its f
 <a id="versionInformation"></a>
 ### Version Information
 - **API version**: 1.0.0
-- **Latest SDK version**: 2.0.0
+- **Latest SDK version**: 3.0.0
 
 <a id="requirements"></a>
 ## Requirements
