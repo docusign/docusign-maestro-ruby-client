@@ -1,3 +1,6 @@
+## [v3.0.0] - Maestro API v1.0.0-1.0.5 - 2025-05-22
+⚠️ Deprecated – Maestro is now available as part of the new IAM SDK: https://developers.docusign.com/docs/sdks/
+
 ## [v2.0.0] - Maestro API v1.0.0-1.0.5 - 2024-07-30
 ### Changed
 - Added support for version v1.0.0-1.0.5 of the DocuSign Maestro API.

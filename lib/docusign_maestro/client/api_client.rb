@@ -18,7 +18,9 @@ require 'uri'
 require 'jwt'
 require 'addressable/uri'
 
+# @deprecated Maestro is now available as part of the new IAM SDK: https://developers.docusign.com/docs/sdks/ .
 module DocuSign_Maestro
+  # @deprecated Maestro is now available as part of the new IAM SDK: https://developers.docusign.com/docs/sdks/ .
   class ApiClient
     # The Configuration object holding settings to be used in the API client.
     attr_accessor :config
@@ -35,7 +37,7 @@ module DocuSign_Maestro
     # @option config [Configuration] Configuration for initializing the object, default to Configuration.default
     def initialize(config = Configuration.default)
       @config = config
-      @user_agent = "Swagger-Codegen/1.0.0/2.0.0/ruby-#{RUBY_VERSION}p#{RUBY_PATCHLEVEL}"
+      @user_agent = "Swagger-Codegen/1.0.0/3.0.0/ruby-#{RUBY_VERSION}p#{RUBY_PATCHLEVEL}"
       @default_headers = {
         'Content-Type' => "application/json",
         'User-Agent' => @user_agent
@@ -409,8 +411,6 @@ module DocuSign_Maestro
       # Derive OAuth Base Path if not given
       if self.base_path.nil? or self.base_path.start_with?("https://demo") or self.base_path.start_with?("http://demo") or self.base_path.start_with?("https://apps-d") or self.base_path.start_with?("http://apps-d")
         self.oauth_base_path = OAuth::DEMO_OAUTH_BASE_PATH
-      elsif self.base_path.start_with?("https://stage") or self.base_path.start_with?("http://stage") or self.base_path.start_with?("https://apps-s") or self.base_path.start_with?("http://apps-s")
-        self.oauth_base_path = OAuth::STAGE_OAUTH_BASE_PATH
       else
         self.oauth_base_path = OAuth::PRODUCTION_OAUTH_BASE_PATH
       end
